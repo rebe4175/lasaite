@@ -9,9 +9,13 @@ body {
 .banner {
 
     width: 100vw;
-    height: 4vw;
+    height: 8vw;
     background-color: black;
     margin-bottom: 1vw;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 2vw;
 }
 
 /* --------------- INDHOLD ---------------------- */
@@ -81,4 +85,41 @@ wn */
 
 .show {
     display: block;
+}
+
+/* --------------- MAIN INDHOLD ----------------------------- */
+
+.indhold_container {
+
+    display: grid;
+    grid-gap: 2vw;
+
+}
+
+.box {
+
+    text-align: center;
+    opacity: .8;
+}
+
+.indhold_container .box img {
+
+    width: 90%;
+    height: 100vw;
+
+}
+
+
+
+
+
+/* --------------- FOOTER -------------------- */
+
+.footer_box {
+
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    margin: 0;
+    padding: 0;
 }
