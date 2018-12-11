@@ -5,25 +5,63 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Droplet</title>
+    <title>DROPLET Products</title>
+    <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="banner"></div>
+    <div class="banner_1">
+        <p>DROPLET</p>
+    </div>
+
+    <div class="banner_2">
+        <p>10% STUDENT DISCOUNT</p>
+    </div>
+
+    <div class="banner_3">
+        <p>SHOP NEW PRINTS AND ORIGINALS</p>
+    </div>
 
     <div class="dropdown">
+
         <button onclick="myDropMenu()" class="dropbtn">Menu</button>
+
+        <a href="cart.html"><img src="cart.png" alt="cart icon" class="cart"> </a>
+
         <div id="myDropdown" class="dropdown-content">
 
             <a href="index.html">Home</a>
-            <a href="#">Shop</a>
+            <a href="products.html">Shop</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
 
         </div>
     </div>
 
+    <div class="drop">
+
+        <button onclick="filterToggle()" class="fil">Filter</button>
+
+        <div id="content-drop">
+
+            <p class="product-item" data-kategori="alle">All</p>
+
+            <p class="product-item" data-kategori="Posters">Posters</p>
+
+            <p class="product-item" data-kategori="Mugs">Mugs</p>
+
+            <p class="product-item" data-kategori="Tote Bag">Tote Bags</p>
+
+            <p class="product-item" data-kategori="T-shirts">T-Shirts</p>
+
+            <p class="product-item" data-kategori="Sweatshirts">Sweatshirts</p>
+
+            <p class="product-item" data-kategori="Covers">Covers</p>
+
+        </div>
+    </div>
 
     <!--Templaten skal være her	-->
     <section class="container">
@@ -34,29 +72,36 @@
 
         <article class="postListview">
 
-            <img data-img id="template_img">
-
             <div id="template_container">
-                <h2 data-title id="template_name"></h2>
+
+                <img data-img id="template_img">
+                <p data-title id="template_name"></p>
                 <p data-price id="template_price"></p>
                 <p data-type id="template_type"></p>
-                <p data-size id="template_size"></p>
-                <p data-colour id="template_colour"></p>
-                <p data-description id="template_description"></p>
                 <img data-img id="template_img">
-                <p data-text id="template_text"></p>
 
             </div>
 
         </article>
 
+
     </template>
+
+    <div class="footer_box">
+        <div class="text">
+            <p> Austeja Lasaite </p>
+            <p> Phone Number </p>
+            <p> E-mail </p>
+        </div>
+        <div class="logo">
+            <img src="insta.png">
+            <img src="fb-logo.png">
+        </div>
+
+    </div>
 
     <script src="javascript.js"></script>
 
 </body>
 
 </html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="">
-<script src=""></script><img alt="" width="0" height="0" src="">
