@@ -294,6 +294,18 @@
       padding: 1vw;
   }
 
+  #myNav {
+
+      display: none;
+
+  }
+
+  #underNav {
+
+      display: none;
+
+  }
+
 
   /* --------------- MAIN INDHOLD ----------------------------- */
 
@@ -397,6 +409,90 @@
 
   @media screen and (min-width: 1000px) {
 
+      /* ---------------VERTICAL MENU---------------------------- */
+
+      #myNav {
+
+          display: block;
+
+      }
+
+      #underNav {
+
+          display: block;
+
+      }
+
+      #myNav ul {
+
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          text-align: center;
+
+      }
+
+      #myNav li {
+          display: inline;
+
+      }
+
+      #myNav li a {
+          display: inline-block;
+          color: black;
+          padding: 1vw;
+          margin-top: 1vw;
+          font-size: 1.4em;
+          font-family: 'Quicksand', sans-serif;
+          text-decoration: none;
+
+
+      }
+
+      #myNav li a:hover {
+          display: inline-block;
+          color: var(--yellow);
+
+      }
+
+      #underNav ul {
+
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          text-align: center;
+
+
+      }
+
+      #underNav li {
+          display: inline;
+
+      }
+
+      #underNav li a {
+
+          display: inline-block;
+          color: darkgrey;
+          padding-left: 1vw;
+          font-size: 1.2em;
+          font-family: 'Oswald', sans-serif;
+          text-decoration: none;
+
+      }
+
+      #underNav li a:hover {
+
+          display: inline-block;
+          color: black;
+          font-size: 1.2em;
+
+      }
+
+
+
       /* --------------- BANNER ------------------------ */
 
       .banner_1 {
@@ -468,13 +564,12 @@
       .content_home {
           display: grid;
           grid-template-columns: repeat(1, 1fr);
-          width: 100vw;
           text-align: center;
 
       }
 
       .content_home img {
-          width: 55%;
+          width: 30%;
           margin-bottom: 7vw;
           margin-top: -4vw;
       }
@@ -497,6 +592,7 @@
           margin-right: 5vw;
           padding-top: 0.1vw;
           line-height: 6vw;
+          font-size: 2em;
       }
 
       .code {
@@ -528,6 +624,11 @@
 
       /* --------------- DROPDOWN MENU ----------------------------- */
 
+      .drop {
+
+          display: none;
+      }
+
       .dropbtn {
           background-color: white;
           font-weight: bold;
@@ -548,82 +649,19 @@
 
       /* Dropdown Content (Hidden by Default) */
 
-      .dropdown-content {
+      .dropbtn {
+
           display: none;
-          text-align: center;
-          min-width: 10vw;
-          box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
-          z-index: 1;
-      }
-
-      .dropdown-content a:hover {
-          color: var(--pink);
-      }
-
-      .logo {
-          width: 17vw;
-          height: 5vw;
-          position: absolute;
-          left: 40vw;
-          bottom: 5vw;
       }
 
       .cart {
           width: 5vw;
           height: 5vw;
           position: absolute;
-          right: 2.5vw;
+          right: 4.5vw;
           top: 1.5vw;
       }
 
-      /* Links inside the dropdown */
-
-      .dropdown-content a {
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-          font-size: 1em;
-          font-family: 'open sans', sans-serif;
-      }
-
-      .show {
-          display: block;
-      }
-
-      .drop {
-          position: relative;
-          cursor: pointer;
-          padding-top: 2vw;
-      }
-
-      .drop button {
-          position: relative;
-          left: 42.4vw;
-          width: 15vw;
-          height: 4vw;
-          font-size: 1em;
-          border: none;
-          box-shadow: none;
-          background-color: black;
-          color: white;
-      }
-
-      #content-drop {
-          position: relative;
-          left: -2vw;
-          margin: 0;
-          padding: 0;
-          width: 100%;
-          padding: 2vw;
-          text-align: center;
-          display: none;
-          box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
-      }
-
-      #content-drop p:hover {
-          color: var(--light-blue);
-      }
 
       .product-item {
           padding: 1vw;
